@@ -181,6 +181,56 @@ body {
   font-family: 'Dosis', sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 45%;
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .content-first {
+    font-size: 1.3rem;
+    height: 28vh;
+  }
+  .content-first__inner {
+    height: 20vh;
+  }
+  .content-first__inner--text {
+    font-size: 2.4rem;
+  }
+  .content-first__inner--link {
+    font-size: 1.8rem;
+  }
+  .slider-nav {
+    display: inline;
+  }
+  .slider-nav--container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .rooms {
+    display: block !important;
+  }
+  .card {
+    border: 2px solid #e5cb86;
+    font-size: 3.5rem;
+    margin: 0 0 !important;
+    border-radius: 0 !important;
+  }
+  .footer__links {
+    margin-left: -4rem;
+  }
+  .footer__links-link {
+    display: block;
+  }
 }
 
 img {
