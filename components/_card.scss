@@ -87,13 +87,13 @@
         padding: .5rem 1.3rem;
     }
     &__buy{
-        display: none;
+        opacity: 0;
         transform: translate(-50%,-50%);
         top: 50%;
         left: 50%;
         position: absolute;
         text-transform: uppercase;
-        transition: all .3s;
+        transition: all .4s;
         text-align: center;
         font-weight: 200;
         background-color: rgb(49, 49, 49);  
