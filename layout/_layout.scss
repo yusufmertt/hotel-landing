@@ -40,3 +40,44 @@
         }
     }
 }
+.content-second{
+    margin-bottom: -8rem;
+    .rooms{
+        background-color: rgb(245, 245, 245);
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+.footer{
+    margin-top: 7.8rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(48, 48, 48);
+    padding-top: 5rem;
+    &__links{
+        
+        &-link{
+            display: inline-block;
+            margin-right: 1rem;
+            text-transform: uppercase;
+            font-weight: 100;
+            font-size: 1.5rem;
+            &--a{
+                text-decoration: none;
+                color: rgb(136, 136, 136);
+                letter-spacing: .2rem;
+                &:hover{
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+    &__logo{
+
+    }
+    &__text{
+        flex-basis: 20%;   
+        color: rgb(136, 136, 136); 
+        font-size: 1.3rem;
+    }
+}

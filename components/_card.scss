@@ -1,0 +1,113 @@
+.card{
+    height: 55vh;
+    margin-top:20rem;
+    margin-bottom: 10rem;
+    flex-basis: 19%;
+    color: rgb(37, 37, 37);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    transition: .3s all;
+
+    &:hover  .card__buy{
+        opacity: 1;
+        display: flex;
+    }
+    
+    &-1{
+        background-image: url(../img/family-d.jpeg);
+        background-size: cover;
+        &:hover{
+            opacity: 1;
+            transform: scale(1.15);
+            background-image: url(../img/family.jpg);
+        }
+        &:hover .card__price{
+            opacity: 0;
+        }
+        
+        &:hover .card__text{
+            opacity: 0
+        }
+    }
+    &-2{
+        background-image:url(../img/single-d.jpeg);
+        background-size: cover;
+        
+        &:hover{
+            opacity: 1;
+            transform: scale(1.15);
+            background-image: url(../img/single.jpg);
+        }
+        &:hover .card__price{
+            opacity: 0;
+        }
+        
+        &:hover .card__text{
+            opacity: 0;
+        }
+    }
+    &-3{
+        background-image: url(../img/suite-d.jpg);
+        background-size: cover;
+        
+        &:hover{
+            opacity: 1;
+            transform: scale(1.15);
+            background-image: url(../img/suite.jpg)
+        }
+        &:hover .card__price{
+            opacity: 0;
+        }
+        
+        &:hover .card__text{
+            opacity: 0;
+        }
+    }
+    &__text{
+        transition: all .3s;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        text-align: center;
+        background-color: rgb(49, 49, 49);
+        border-radius: 4px;
+        padding: .5rem 1.3rem;
+        color: $color-primary;
+    }
+    &__price{
+        transition: all .3s;
+        text-align: center;
+        font-weight: 200;
+        background-color: rgb(49, 49, 49);  
+        color: $color-primary;
+        border-radius: 4px;
+        padding: .5rem 1.3rem;
+    }
+    &__buy{
+        display: none;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        text-transform: uppercase;
+        transition: all .3s;
+        text-align: center;
+        font-weight: 200;
+        background-color: rgb(49, 49, 49);  
+        color: $color-primary;
+        border-radius: 4px;
+        padding: .7rem 2.2rem;
+        font-weight: 600;
+        &:hover{
+            background-color: rgb(29, 29, 29);
+        }
+        &--link{
+            text-decoration: none;
+            color: $color-primary;
+            
+        }
+    }
+}
