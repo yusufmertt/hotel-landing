@@ -1,0 +1,26 @@
+
+.nav{
+    display: flex;
+    align-items: center;
+    &__list{
+        list-style-type: none;
+    }
+    &__items{
+        font-size: 1.5rem;
+        display: inline-block;
+        font-weight: 400;
+        margin-right: 3rem;
+        &--link{
+            text-decoration: none;
+            color: rgb(223, 223, 223);
+            &:hover{
+                color: $color-primary;
+                cursor: pointer;
+            }
+        }
+        &:last-child{
+            margin-right: 5rem;
+        }
+        
+    }
+}

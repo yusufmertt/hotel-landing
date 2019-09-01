@@ -1,0 +1,17 @@
+.heading{
+    top:0;
+    position: sticky;
+    background-color: rgb(49, 49, 49);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo-box{
+        align-self: center;
+        margin: 2rem 4rem;
+        
+    }
+    &__logo{
+        height: 5rem;
+    }
+}

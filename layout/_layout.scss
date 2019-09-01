@@ -1,0 +1,42 @@
+.content-first{
+    
+    background: url("../img/resort.jpg");
+    background-size: 100%;
+    
+    background-repeat: no-repeat;    
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__inner{
+        display: inline-block;
+        background-color: rgba(rgb(49, 49, 49), .8);
+        width: 60%;
+        height: 40%;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        &--text{
+            font-size: 3rem;
+            color:rgb(223, 223, 223);
+            text-transform: uppercase;
+            letter-spacing: .3rem;
+        }
+        &--link{
+            text-transform: uppercase;
+            text-decoration: none;
+            color: rgb(223, 223, 223);
+            border: 2px solid $color-primary;
+            padding: 1.2rem 3.7rem;
+            transition: .2s all;
+            letter-spacing: .2rem;
+            &:hover{
+                background-color: $color-primary;
+                color: rgb(49, 49, 49);
+            }
+        }
+    }
+}
