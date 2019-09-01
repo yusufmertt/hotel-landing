@@ -186,7 +186,7 @@ body {
 
 @media only screen and (max-width: 800px) {
   html {
-    font-size: 45%;
+    font-size: 40%;
     overflow-x: hidden;
   }
   body {
