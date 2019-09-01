@@ -206,6 +206,7 @@ body {
     font-size: 1.8rem;
   }
   .slider-nav {
+    margin-right: 3rem !important;
     display: inline;
   }
   .slider-nav--container {
