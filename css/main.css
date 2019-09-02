@@ -184,17 +184,28 @@ body {
   overflow-x: hidden;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   html {
-    font-size: 40%;
+    font-size: 45%;
     overflow-x: hidden;
   }
   body {
     overflow-x: hidden;
   }
+  .heading {
+    font-size: 5rem;
+  }
+  .heading__logo {
+    height: 6rem;
+  }
+  .nav__items {
+    font-size: 2.2rem;
+    margin-right: .7rem;
+  }
   .content-first {
     font-size: 1.3rem;
-    height: 28vh;
+    height: 40vh;
+    background-size: auto 40vh;
   }
   .content-first__inner {
     height: 20vh;
